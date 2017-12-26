@@ -10,6 +10,11 @@
 		038D754C8202826432B7B005 /* Pods_FirebaseExplorerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534F28644AA2D5589FAFFA6B /* Pods_FirebaseExplorerUITests.framework */; };
 		07D2DF8C549E54A21E19D6AB /* Pods_FirebaseExplorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E457AAA6BB13FE8E29CC19 /* Pods_FirebaseExplorer.framework */; };
 		214C7C6D84F0558A12DD9E53 /* Pods_FirebaseExplorerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7AFCF744B20E8EFAB4344 /* Pods_FirebaseExplorerTests.framework */; };
+		6123D3581FF26F710076862A /* ThemePacksContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D3571FF26F710076862A /* ThemePacksContract.swift */; };
+		6123D35A1FF270400076862A /* ThemePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D3591FF270400076862A /* ThemePack.swift */; };
+		6123D35E1FF271350076862A /* ThemePackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D35D1FF271350076862A /* ThemePackService.swift */; };
+		6123D3611FF271760076862A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D3601FF271760076862A /* Result.swift */; };
+		6123D3641FF273F10076862A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D3631FF273F10076862A /* Constants.swift */; };
 		6196452E1FF265B300C08647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6196452D1FF265B300C08647 /* AppDelegate.swift */; };
 		619645351FF265B300C08647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619645341FF265B300C08647 /* Assets.xcassets */; };
 		619645381FF265B300C08647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619645361FF265B300C08647 /* LaunchScreen.storyboard */; };
@@ -38,6 +43,11 @@
 		00A7AFCF744B20E8EFAB4344 /* Pods_FirebaseExplorerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseExplorerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		113A1C3FAD663FFA126261EF /* Pods-FirebaseExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseExplorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseExplorer/Pods-FirebaseExplorer.debug.xcconfig"; sourceTree = "<group>"; };
 		534F28644AA2D5589FAFFA6B /* Pods_FirebaseExplorerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseExplorerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6123D3571FF26F710076862A /* ThemePacksContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePacksContract.swift; sourceTree = "<group>"; };
+		6123D3591FF270400076862A /* ThemePack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePack.swift; sourceTree = "<group>"; };
+		6123D35D1FF271350076862A /* ThemePackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePackService.swift; sourceTree = "<group>"; };
+		6123D3601FF271760076862A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		6123D3631FF273F10076862A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6196452A1FF265B300C08647 /* FirebaseExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6196452D1FF265B300C08647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		619645341FF265B300C08647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +95,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6123D34E1FF26EBD0076862A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6123D3591FF270400076862A /* ThemePack.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6123D34F1FF26ED50076862A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6123D35F1FF271670076862A /* Core */,
+				6123D35D1FF271350076862A /* ThemePackService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6123D3501FF26EDC0076862A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6123D3511FF26F0C0076862A /* ThemePacks */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6123D3511FF26F0C0076862A /* ThemePacks */ = {
+			isa = PBXGroup;
+			children = (
+				6123D3561FF26F390076862A /* View */,
+				6123D3551FF26F2E0076862A /* Interactor */,
+				6123D3541FF26F220076862A /* Presenter */,
+				6123D3531FF26F1D0076862A /* Router */,
+				6123D3571FF26F710076862A /* ThemePacksContract.swift */,
+			);
+			path = ThemePacks;
+			sourceTree = "<group>";
+		};
+		6123D3531FF26F1D0076862A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6123D3541FF26F220076862A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6123D3551FF26F2E0076862A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6123D3561FF26F390076862A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6123D35F1FF271670076862A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6123D3601FF271760076862A /* Result.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6123D3621FF273DA0076862A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6123D3631FF273F10076862A /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		619645211FF265B300C08647 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +203,10 @@
 			children = (
 				6196455B1FF267D300C08647 /* Application */,
 				6196455C1FF267E300C08647 /* Assets */,
+				6123D3621FF273DA0076862A /* Common */,
+				6123D34E1FF26EBD0076862A /* Entities */,
+				6123D3501FF26EDC0076862A /* Modules */,
+				6123D34F1FF26ED50076862A /* Services */,
 			);
 			path = FirebaseExplorer;
 			sourceTree = "<group>";
@@ -189,6 +284,7 @@
 				AD0777BB7BF7192D2DBF5218 /* [CP] Embed Pods Frameworks */,
 				6E5C2AFBDFABF318ADFD2FC6 /* [CP] Copy Pods Resources */,
 				6123D3441FF26C1F0076862A /* ShellScript */,
+				6123D35B1FF270E90076862A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -385,6 +481,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		6123D35B1FF270E90076862A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		6E5C2AFBDFABF318ADFD2FC6 /* [CP] Copy Pods Resources */ = {
@@ -469,7 +578,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6123D35E1FF271350076862A /* ThemePackService.swift in Sources */,
+				6123D3611FF271760076862A /* Result.swift in Sources */,
+				6123D3581FF26F710076862A /* ThemePacksContract.swift in Sources */,
+				6123D35A1FF270400076862A /* ThemePack.swift in Sources */,
 				6196452E1FF265B300C08647 /* AppDelegate.swift in Sources */,
+				6123D3641FF273F10076862A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
