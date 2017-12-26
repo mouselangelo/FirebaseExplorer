@@ -18,6 +18,14 @@ extension ThemePacksView {
     func display(packs: [IThemePack], appending: Bool? = false) {
         display(packs: packs, appending: appending)
     }
+
+    func display(packs: [IThemePack], appending: Bool) {
+        print(packs.count)
+    }
+
+    func display(error: Error) {
+        print(error.localizedDescription)
+    }
 }
 
 protocol IThemePacksPresenter {

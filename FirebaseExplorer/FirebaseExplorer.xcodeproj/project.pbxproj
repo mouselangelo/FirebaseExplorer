@@ -15,6 +15,11 @@
 		6123D35E1FF271350076862A /* ThemePackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D35D1FF271350076862A /* ThemePackService.swift */; };
 		6123D3611FF271760076862A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D3601FF271760076862A /* Result.swift */; };
 		6123D3641FF273F10076862A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D3631FF273F10076862A /* Constants.swift */; };
+		6123D3671FF276AE0076862A /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D3661FF276AE0076862A /* RootContract.swift */; };
+		6123D36A1FF276FC0076862A /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D3691FF276FC0076862A /* RootRouter.swift */; };
+		6123D36C1FF277760076862A /* ThemePackRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D36B1FF277760076862A /* ThemePackRouter.swift */; };
+		6123D36F1FF278170076862A /* ThemePacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D36D1FF278170076862A /* ThemePacksViewController.swift */; };
+		6123D3701FF278170076862A /* ThemePacksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6123D36E1FF278170076862A /* ThemePacksViewController.xib */; };
 		6196452E1FF265B300C08647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6196452D1FF265B300C08647 /* AppDelegate.swift */; };
 		619645351FF265B300C08647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619645341FF265B300C08647 /* Assets.xcassets */; };
 		619645381FF265B300C08647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619645361FF265B300C08647 /* LaunchScreen.storyboard */; };
@@ -48,6 +53,11 @@
 		6123D35D1FF271350076862A /* ThemePackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePackService.swift; sourceTree = "<group>"; };
 		6123D3601FF271760076862A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		6123D3631FF273F10076862A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6123D3661FF276AE0076862A /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
+		6123D3691FF276FC0076862A /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		6123D36B1FF277760076862A /* ThemePackRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePackRouter.swift; sourceTree = "<group>"; };
+		6123D36D1FF278170076862A /* ThemePacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePacksViewController.swift; sourceTree = "<group>"; };
+		6123D36E1FF278170076862A /* ThemePacksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemePacksViewController.xib; sourceTree = "<group>"; };
 		6196452A1FF265B300C08647 /* FirebaseExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6196452D1FF265B300C08647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		619645341FF265B300C08647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +125,7 @@
 		6123D3501FF26EDC0076862A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6123D3651FF276970076862A /* Root */,
 				6123D3511FF26F0C0076862A /* ThemePacks */,
 			);
 			path = Modules;
@@ -135,6 +146,7 @@
 		6123D3531FF26F1D0076862A /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				6123D36B1FF277760076862A /* ThemePackRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -156,6 +168,8 @@
 		6123D3561FF26F390076862A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6123D36D1FF278170076862A /* ThemePacksViewController.swift */,
+				6123D36E1FF278170076862A /* ThemePacksViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +188,23 @@
 				6123D3631FF273F10076862A /* Constants.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		6123D3651FF276970076862A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				6123D3681FF276E90076862A /* Router */,
+				6123D3661FF276AE0076862A /* RootContract.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		6123D3681FF276E90076862A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6123D3691FF276FC0076862A /* RootRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		619645211FF265B300C08647 = {
@@ -389,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				619645381FF265B300C08647 /* LaunchScreen.storyboard in Resources */,
+				6123D3701FF278170076862A /* ThemePacksViewController.xib in Resources */,
 				619645351FF265B300C08647 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,7 +614,11 @@
 				6123D3611FF271760076862A /* Result.swift in Sources */,
 				6123D3581FF26F710076862A /* ThemePacksContract.swift in Sources */,
 				6123D35A1FF270400076862A /* ThemePack.swift in Sources */,
+				6123D36C1FF277760076862A /* ThemePackRouter.swift in Sources */,
+				6123D36F1FF278170076862A /* ThemePacksViewController.swift in Sources */,
+				6123D36A1FF276FC0076862A /* RootRouter.swift in Sources */,
 				6196452E1FF265B300C08647 /* AppDelegate.swift in Sources */,
+				6123D3671FF276AE0076862A /* RootContract.swift in Sources */,
 				6123D3641FF273F10076862A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
