@@ -188,6 +188,7 @@
 				619645281FF265B300C08647 /* Resources */,
 				AD0777BB7BF7192D2DBF5218 /* [CP] Embed Pods Frameworks */,
 				6E5C2AFBDFABF318ADFD2FC6 /* [CP] Copy Pods Resources */,
+				6123D3441FF26C1F0076862A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -372,6 +373,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseExplorerUITests/Pods-FirebaseExplorerUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6123D3441FF26C1F0076862A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		6E5C2AFBDFABF318ADFD2FC6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
