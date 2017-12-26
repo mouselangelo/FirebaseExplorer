@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6196452E1FF265B300C08647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6196452D1FF265B300C08647 /* AppDelegate.swift */; };
-		619645301FF265B300C08647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6196452F1FF265B300C08647 /* ViewController.swift */; };
-		619645331FF265B300C08647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619645311FF265B300C08647 /* Main.storyboard */; };
 		619645351FF265B300C08647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619645341FF265B300C08647 /* Assets.xcassets */; };
 		619645381FF265B300C08647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619645361FF265B300C08647 /* LaunchScreen.storyboard */; };
 		619645431FF265B300C08647 /* FirebaseExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619645421FF265B300C08647 /* FirebaseExplorerTests.swift */; };
@@ -36,8 +34,6 @@
 /* Begin PBXFileReference section */
 		6196452A1FF265B300C08647 /* FirebaseExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6196452D1FF265B300C08647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6196452F1FF265B300C08647 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		619645321FF265B300C08647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		619645341FF265B300C08647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		619645371FF265B300C08647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		619645391FF265B300C08647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,12 +93,8 @@
 		6196452C1FF265B300C08647 /* FirebaseExplorer */ = {
 			isa = PBXGroup;
 			children = (
-				6196452D1FF265B300C08647 /* AppDelegate.swift */,
-				6196452F1FF265B300C08647 /* ViewController.swift */,
-				619645311FF265B300C08647 /* Main.storyboard */,
-				619645341FF265B300C08647 /* Assets.xcassets */,
-				619645361FF265B300C08647 /* LaunchScreen.storyboard */,
-				619645391FF265B300C08647 /* Info.plist */,
+				6196455B1FF267D300C08647 /* Application */,
+				6196455C1FF267E300C08647 /* Assets */,
 			);
 			path = FirebaseExplorer;
 			sourceTree = "<group>";
@@ -123,6 +115,24 @@
 				6196454F1FF265B400C08647 /* Info.plist */,
 			);
 			path = FirebaseExplorerUITests;
+			sourceTree = "<group>";
+		};
+		6196455B1FF267D300C08647 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6196452D1FF265B300C08647 /* AppDelegate.swift */,
+				619645361FF265B300C08647 /* LaunchScreen.storyboard */,
+				619645391FF265B300C08647 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6196455C1FF267E300C08647 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				619645341FF265B300C08647 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +244,6 @@
 			files = (
 				619645381FF265B300C08647 /* LaunchScreen.storyboard in Resources */,
 				619645351FF265B300C08647 /* Assets.xcassets in Resources */,
-				619645331FF265B300C08647 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619645301FF265B300C08647 /* ViewController.swift in Sources */,
 				6196452E1FF265B300C08647 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		619645311FF265B300C08647 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				619645321FF265B300C08647 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		619645361FF265B300C08647 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,7 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FirebaseExplorer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirebaseExplorer/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deuxlapins.FirebaseExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FirebaseExplorer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirebaseExplorer/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deuxlapins.FirebaseExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
