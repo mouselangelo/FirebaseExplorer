@@ -9,6 +9,7 @@ target 'FirebaseExplorer' do
 
   # Pods for FirebaseExplorer
   pod 'SwiftLint'
+  pod 'Firebase/Core'
 
   target 'FirebaseExplorerTests' do
     inherit! :search_paths

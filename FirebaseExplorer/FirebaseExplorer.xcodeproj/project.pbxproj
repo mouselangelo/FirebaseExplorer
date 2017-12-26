@@ -20,6 +20,9 @@
 		6123D36C1FF277760076862A /* ThemePackRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D36B1FF277760076862A /* ThemePackRouter.swift */; };
 		6123D36F1FF278170076862A /* ThemePacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123D36D1FF278170076862A /* ThemePacksViewController.swift */; };
 		6123D3701FF278170076862A /* ThemePacksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6123D36E1FF278170076862A /* ThemePacksViewController.xib */; };
+		6123D3721FF27B4C0076862A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6123D3711FF27B4C0076862A /* GoogleService-Info.plist */; };
+		6123D3731FF27B4D0076862A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6123D3711FF27B4C0076862A /* GoogleService-Info.plist */; };
+		6123D3741FF27B4D0076862A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6123D3711FF27B4C0076862A /* GoogleService-Info.plist */; };
 		6196452E1FF265B300C08647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6196452D1FF265B300C08647 /* AppDelegate.swift */; };
 		619645351FF265B300C08647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619645341FF265B300C08647 /* Assets.xcassets */; };
 		619645381FF265B300C08647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619645361FF265B300C08647 /* LaunchScreen.storyboard */; };
@@ -58,6 +61,7 @@
 		6123D36B1FF277760076862A /* ThemePackRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePackRouter.swift; sourceTree = "<group>"; };
 		6123D36D1FF278170076862A /* ThemePacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePacksViewController.swift; sourceTree = "<group>"; };
 		6123D36E1FF278170076862A /* ThemePacksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemePacksViewController.xib; sourceTree = "<group>"; };
+		6123D3711FF27B4C0076862A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6196452A1FF265B300C08647 /* FirebaseExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6196452D1FF265B300C08647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		619645341FF265B300C08647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 				6196452D1FF265B300C08647 /* AppDelegate.swift */,
 				619645361FF265B300C08647 /* LaunchScreen.storyboard */,
 				619645391FF265B300C08647 /* Info.plist */,
+				6123D3711FF27B4C0076862A /* GoogleService-Info.plist */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				619645381FF265B300C08647 /* LaunchScreen.storyboard in Resources */,
+				6123D3721FF27B4C0076862A /* GoogleService-Info.plist in Resources */,
 				6123D3701FF278170076862A /* ThemePacksViewController.xib in Resources */,
 				619645351FF265B300C08647 /* Assets.xcassets in Resources */,
 			);
@@ -429,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6123D3731FF27B4D0076862A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6123D3741FF27B4D0076862A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
